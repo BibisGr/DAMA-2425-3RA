@@ -7,3 +7,6 @@ body{
 .bg-button-purple{
     background-color: rgb(143, 8, 254);
 }
+.icon-red{
+    color: red;
+}
