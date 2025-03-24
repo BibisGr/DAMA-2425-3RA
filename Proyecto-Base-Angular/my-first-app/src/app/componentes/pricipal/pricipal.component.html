@@ -1,0 +1,29 @@
+<div class="cotainer-fluid">
+  <h1>Nombre: {{name}}</h1>
+  <h1 class="display-1">{{edad}}</h1>
+  <h1>{{altura}}</h1>
+  <h1>{{estado}}</h1>
+  <h1>{{frutas}}</h1>
+  <h1>{{fruta.nombre}}</h1>
+  <h1>{{fruta.color}}</h1>
+  <h1>{{fruta.precio}}</h1>
+  <h1>{{address}}</h1>
+  <button class="btn btn-warning" (click)="masUno()">Cambiar</button>
+  <button class="btn btn-danger" (click)="cambiaDatos()">Todo Distinto</button>
+
+  @for (fruta of frutas; track fruta) {
+  <h2>Fruta:{{fruta}}</h2>
+  }
+  <h1>Listado de frutas</h1>
+  <div class="container d-flex justify-content-center">
+    @for (fruta2 of frutas2; track fruta2) {
+    <div class="card m-5 bg-primary text-white" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">{{fruta2.nombre}}</h5>
+        <h6 class="card-subtitle mb-2">{{fruta2.color}}</h6>
+        <p class="card-text">{{fruta2.precio}}</p>
+      </div>
+    </div>
+    }
+  </div>
+</div>
