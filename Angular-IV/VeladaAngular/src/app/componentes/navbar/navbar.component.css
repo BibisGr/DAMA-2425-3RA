@@ -12,3 +12,10 @@
   color: #4BE8DE;
   font-weight: bold;
 }
+.activeButton{
+  border-bottom: 1px solid #e03d84;
+}
+.activeButtonInicio{
+  background-color: black;
+  border-bottom: 1px solid #e03d84;
+}
