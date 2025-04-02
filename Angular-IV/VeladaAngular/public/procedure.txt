@@ -1,0 +1,4 @@
+1. verificar o agregar el proveedor de http
+2. configurar el servicio
+3. configurar el receptor
+4. Mostrar los datos

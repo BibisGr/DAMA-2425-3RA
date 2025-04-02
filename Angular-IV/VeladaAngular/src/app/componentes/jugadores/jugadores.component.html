@@ -1,1 +1,57 @@
-<p>jugadores works!</p>
+<!-- <div class="container d-flex flex-column justify-content-between">
+  <h1 class="display-2">{{superheroes.SquadName}}</h1>
+  <h1 class="display-2">{{superheroes.BaseSecreta}}</h1>
+  <h1 class="display-2">{{superheroes.HomeTown}}</h1>
+  <h1 class="display-2">{{superheroes.Formed}}</h1>
+
+  <div class="container d-flex flex-row justify-content-between">
+    @for (heroe of superheroes.miembros; track $index) {
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title display-4">{{heroe.Alias}}</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">{{heroe.Nombre}}</h6>
+        @if (heroe.Activo) { <p class="card-text">Héroe Activo</p>}
+        @else { <p class="card-text">Héroe Retirado</p>}
+
+        <h3>Poderes</h3>
+        <ul>
+          @for (poder of heroe.Poderes; track $index) {
+            <li class="card-text">{{poder}}</li>
+          }
+        </ul>
+
+        <h3>Enemigos</h3>
+        <ul>
+          @for (enemigo of heroe.enemigos; track $index) {
+            <li class="card-text">{{enemigo}}</li>
+          }
+        </ul>
+
+      </div>
+    </div>
+    }
+  </div>
+</div> -->
+<div class="container d-flex justify-content-between flex-column align-items-center">
+  <h1 class="display-2 text-center">EVENTO: {{player.evento}}</h1>
+  <h1 class="display-6 text-center">Fecha: {{player.fecha}}</h1>
+  <h1 class="display-6 text-center">Ubicación: {{player.ubicacion}}</h1>
+
+
+  <div class="container d-flex justify-content-between flex-row flex-wrap">
+    @for (player of player.participantes; track $index) {
+    <div class="card m-2 " style="width: 18rem;">
+      <img src="{{player.imagen}}" class="card-img-top" alt="...">
+      <div class="card-body d-flex justify-content-center align-items-center flex-column">
+        <h5 class="card-title display-4">{{player.alias}}</h5>
+        <p class="card-text">Nombre: {{player.nombre}}</p>
+        <p class="card-text">País: {{player.pais}}</p>
+        <p class="card-text">Peso: {{player.peso}}</p>
+        <p class="card-text">{{player.record}}</p>
+        <p class="card-text">{{player.rival}}</p>
+        <a class="btn textpink">Ver Jugador</a>
+      </div>
+    </div>
+    }
+  </div>
+</div>
